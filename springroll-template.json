@@ -5,7 +5,8 @@
 	"rename" : {
 		"gitignore" : ".gitignore",
 		"bowerrc" : ".bowerrc",
-		"project.md": "README.md"
+		"project.md": "README.md",
+		"bower": "bower.json"
 	},
 	"required": ["springroll.Core"],
 	"modules": [
