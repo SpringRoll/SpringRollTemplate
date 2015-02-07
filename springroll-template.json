@@ -1,0 +1,139 @@
+{
+	"name" : "Default",
+	"id" : "io.springroll.default",
+	"version" : "1.2.0",
+	"rename" : {
+		"gitignore" : ".gitignore",
+		"bowerrc" : ".bowerrc",
+		"project.md": "README.md"
+	},
+	"required": ["springroll.Core"],
+	"modules": [
+		{
+			"id": "springroll.Core",
+			"name": "SpringRoll Core",
+			"main": "components/springroll/dist/core.min.js",
+			"mainDebug": "components/springroll/dist/core.js",
+			"bower": {
+				"springroll": "*"
+			},
+			"libraries": "components/preloadjs/lib/preloadjs.min.js",
+			"librariesDebug": "components/preloadjs/lib/preloadjs.combined.js"
+		},
+		{
+			"id": "springroll.CreateJSDisplay",
+			"name": "CreateJS Display",
+			"main": "components/springroll/dist/modules/display-createjs.min.js",
+			"mainDebug": "components/springroll/dist/modules/display-createjs.js",
+			"bower": {
+				"easeljs": "https://github.com/SpringRoll/EaselJS.git",
+				"tweenjs": "https://github.com/SpringRoll/TweenJS.git"
+			},
+			"libraries": [
+				"components/tweenjs/lib/tweenjs.min.js",
+				"components/easeljs/lib/easeljs.min.js",
+				"components/easeljs/lib/movieclip.min.js"
+			],
+			"librariesDebug": [
+				"components/tweenjs/lib/tweenjs.combined.js",
+				"components/easeljs/lib/easeljs.combined.js",
+				"components/easeljs/lib/movieclip.combined.js"
+			],
+			"depends": ["springroll.Core"],
+			"display": "springroll.createjs.CreateJSDisplay"
+		},
+		{
+			"id": "springroll.PixiDisplay",
+			"name": "Pixi.js Display",
+			"main": "components/springroll/dist/modules/display-pixi.min.js",
+			"mainDebug": "components/springroll/dist/modules/display-pixi.js",
+			"bower": {
+				"pixi.js":"https://github.com/SpringRoll/pixi.js.git"
+			},
+			"libraries": "components/pixi.js/bin/pixi.js",
+			"librariesDebug": "components/pixi.js/bin/pixi.dev.js",
+			"depends": ["springroll.Core"],
+			"display": "springroll.pixi.PixiDisplay",
+			"default": false
+		},
+		{
+			"id": "springroll.NativeDisplay",
+			"name": "Native Display",
+			"main": "components/springroll/dist/modules/display-native.min.js",
+			"mainDebug": "components/springroll/dist/modules/display-native.js",
+			"depends": ["springroll.Core"],
+			"display": "springroll.native.NativeDisplay",
+			"default": false
+		},
+		{
+			"id": "springroll.Sound",
+			"name": "Sound",
+			"bower": {
+				"soundjs": "https://github.com/SpringRoll/SoundJS.git"
+			},
+			"main":"components/springroll/dist/modules/sound.min.js",
+			"mainDebug":"components/springroll/dist/modules/sound.js",
+			"libraries": [
+				"components/soundjs/lib/soundjs.min.js",
+				"components/soundjs/lib/flashaudioplugin.min.js"
+			],
+			"librariesDebug": [
+				"components/soundjs/lib/soundjs.min.js",
+				"components/soundjs/lib/flashaudioplugin.combined.js"
+			],
+			"librariesCopy": {
+				"components/soundjs/lib/FlashAudioPlugin.swf": "deploy/assets/swfs/"
+			},
+			"depends": ["springroll.Core"]
+		},
+		{
+			"id": "springroll.Interface",
+			"name": "Interface",
+			"main": "components/springroll/dist/modules/interface.min.js",
+			"mainDebug": "components/springroll/dist/modules/interface.js",
+			"depends": [
+				"springroll.Core",
+				["springroll.CreateJSDisplay", "springroll.PixiDisplay"]
+			]
+		},
+		{
+			"id": "springroll.Captions",
+			"name": "Captions",
+			"main": "components/springroll/dist/modules/captions.min.js",
+			"mainDebug": "components/springroll/dist/modules/captions.js",
+			"depends": ["springroll.Core"]
+		},
+		{
+			"id": "springroll.Game",
+			"name": "Game",
+			"main": "components/springroll/dist/modules/game.min.js",
+			"mainDebug": "components/springroll/dist/modules/game.js",
+			"depends": [
+				"springroll.Sound", 
+				"springroll.Core",
+				["springroll.CreateJSDisplay","springroll.PixiDisplay"]
+			]
+		},
+		{
+			"id": "springroll.Tasks",
+			"name": "Tasks",
+			"main": "components/springroll/dist/modules/tasks.min.js",
+			"mainDebug": "components/springroll/dist/modules/tasks.js",
+			"depends": ["springroll.Core"]
+		},
+		{
+			"id": "springroll.Translate",
+			"name": "Translate",
+			"main": "components/springroll/dist/modules/translate.min.js",
+			"mainDebug": "components/springroll/dist/modules/translate.js",
+			"depends": ["springroll.Core"]
+		},
+		{
+			"id": "springroll.Worker",
+			"name": "Worker",
+			"main": "components/springroll/dist/modules/worker.min.js",
+			"mainDebug": "components/springroll/dist/modules/worker.js",
+			"default": false
+		}
+	]
+}

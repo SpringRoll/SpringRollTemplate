@@ -1,0 +1,15 @@
+{
+	"name": "_className_",
+	"version": "_version_",
+	"dependencies": {
+		"normalize-less": "*"
+	},
+	"ignore": [
+		".gitignore",
+		".gitattributes",
+		"src",
+		"springroll.json",
+		"Gruntfile.js",
+		"package.js"
+	]
+}
