@@ -68,6 +68,12 @@
 			"default": false
 		},
 		{
+			"id": "springroll.Debug",
+			"name": "Debug",
+			"mainDebug": "components/springroll/dist/modules/debug.js",
+			"depends": ["springroll.Core"]
+		},
+		{
 			"id": "springroll.Tasks",
 			"name": "Tasks",
 			"main": "components/springroll/dist/modules/tasks.min.js",
