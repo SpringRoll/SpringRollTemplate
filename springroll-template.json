@@ -194,7 +194,7 @@
 			"main": "components/springroll/dist/modules/game.min.js",
 			"mainDebug": "components/springroll/dist/modules/game.js",
 			"depends": [
-				"sound", 
+				"sound",
 				"core",
 				["easeljs-display","pixi-display"]
 			]
@@ -222,16 +222,24 @@
 			"id": "tracking-game",
 			"name": "Tracking Game",
 			"description": "Special game application which can use hinting or progress-tracker",
-			"main": "components/springroll/dist/modules/tracking-game.min.js",
-			"mainDebug": "components/springroll/dist/modules/tracking-game.js",
+			"main": [
+				"components/springroll/dist/modules/tracking-game.min.js",
+				"components/springroll/dist/modules/tracking-game.min.css"
+			],
+			"mainDebug": [
+				"components/springroll/dist/modules/tracking-game.js",
+				"components/springroll/dist/modules/tracking-game.css"
+			],
 			"bower": {
 				"bellhop": "*"
 			},
-			"libraries":[ 
-				"components/bellhop/dist/bellhop.min.js"
+			"libraries":[
+				"components/bellhop/dist/bellhop.min.js",
+				"components/normalize-less/normalize.less"
 			],
 			"librariesDebug": [
-				"components/bellhop/dist/bellhop.js"
+				"components/bellhop/dist/bellhop.js",
+				"components/normalize-less/normalize.less"
 			],
 			"depends": [
 				"game",
@@ -271,7 +279,7 @@
 				"bellhop": "*",
 				"jquery": "*"
 			},
-			"libraries":[ 
+			"libraries":[
 				"components/bellhop/dist/bellhop.min.js",
 				"components/jquery/dist/jquery.min.js"
 			],
