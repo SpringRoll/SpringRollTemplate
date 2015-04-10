@@ -213,6 +213,7 @@
 			"description": "Integration for sending events with the Progress Tracker",
 			"main": "components/springroll/dist/modules/progress-tracker.min.js",
 			"mainDebug": [
+				"components/jquery/dist/jquery.min.js",
 				"components/springroll/dist/modules/progress-tracker.js",
 				"components/springroll/dist/modules/progress-tracker.css"
 			],
