@@ -23,6 +23,13 @@
 			"librariesDebug": "components/preloadjs/lib/preloadjs.combined.js"
 		},
 		{
+			"id": "debug",
+			"name": "Debug",
+			"description": "Feature parity with window.console but with support remote debugging and colored logs",
+			"mainDebug": "components/springroll/dist/modules/debug.js",
+			"depends": ["core"]
+		},
+		{
 			"id": "easeljs-display",
 			"name": "EaselJS Display",
 			"description": "Display plugin which uses EaselJS to render the canvas",
@@ -130,13 +137,6 @@
 			"depends": ["core"],
 			"display": "springroll.native.NativeDisplay",
 			"default": false
-		},
-		{
-			"id": "debug",
-			"name": "Debug",
-			"description": "Feature parity with window.console but with support remote debugging and colored logs",
-			"mainDebug": "components/springroll/dist/modules/debug.js",
-			"depends": ["core"]
 		},
 		{
 			"id": "tasks",
