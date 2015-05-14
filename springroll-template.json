@@ -175,8 +175,8 @@
 			"id": "easeljs-states",
 			"name": "EaselJS States",
 			"description": "Special EaselJS flavor of the tracking game module",
-			"main": "components/springroll/dist/modules/easeljs-tracking-game.min.js",
-			"mainDebug": "components/springroll/dist/modules/easeljs-tracking-game.js",
+			"main": "components/springroll/dist/modules/easeljs-states.min.js",
+			"mainDebug": "components/springroll/dist/modules/easeljs-states.js",
 			"depends": [
 				"states",
 				"sound",
