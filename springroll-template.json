@@ -31,7 +31,7 @@
 		{
 			"id": "states",
 			"name": "States",
-			"description": "Use state management with games",
+			"description": "Add states to Application and a transition",
 			"main": "components/springroll/dist/modules/states.min.js",
 			"mainDebug": "components/springroll/dist/modules/states.js",
 			"depends": [
@@ -78,7 +78,7 @@
 		{
 			"id": "ui",
 			"name": "Interface",
-			"description": "Rendering of responive interfaces",
+			"description": "Rendering of responive interfaces and touch detection",
 			"main": "components/springroll/dist/modules/ui.min.js",
 			"mainDebug": "components/springroll/dist/modules/ui.js",
 			"depends": [
@@ -108,7 +108,7 @@
 		{
 			"id": "learning",
 			"name": "Learning",
-			"description": "Integration for sending events with the Learning",
+			"description": "Integration for sending events with the Learning dispatcher",
 			"main": "components/springroll/dist/modules/learning.min.js",
 			"mainDebug": [
 				"components/springroll/dist/modules/learning.js",
