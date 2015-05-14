@@ -4,8 +4,7 @@
 	"version": "_version_",
 	"config": "src/_namespace_/config",
 	"main": [
-		"src/_namespace_/_className_.js",
-		"src/_namespace_/_className_.less"
+		"src/_namespace_/main.js"
 	],
 	"libraries": [
 		"components/normalize-less/normalize.less",
