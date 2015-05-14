@@ -294,7 +294,7 @@
 				"bellhop": "*",
 				"jquery": "*"
 			},
-			"libraries":[ 
+			"libraries":[
 				"components/bellhop/dist/bellhop.min.js",
 				"components/jquery/dist/jquery.min.js"
 			],
