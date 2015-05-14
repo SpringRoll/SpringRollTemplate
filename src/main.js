@@ -1,13 +1,14 @@
 (function(){
 
 	// Library depencencies
-	var Application = include('springroll.Application');
+	var Application = include('springroll.Application'),
+		Display = include('_displayClass_');
 
 	// Create a new application
 	var app = new Application({
-		name: _name_,
+		name: "_name_",
 		canvasId: "stage",
-		display: _displayClass_,
+		display: Display,
 		displayOptions:	{
 			clearView: true,
 		}

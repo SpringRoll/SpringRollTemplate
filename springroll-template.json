@@ -113,14 +113,20 @@
 			"mainDebug": [
 				"components/springroll/dist/modules/learning.js",
 				"components/springroll/dist/modules/learning.css"
-			]
+			],
+			"bower": {
+				"jquery": "*"
+			},
+			"librariesDebug": [
+				"components/jquery/dist/jquery.js"
+			],
 		},
 		{
 			"id": "learning-media",
 			"name": "Learning Media",
 			"description": "Convenience functions for playing and dispatching events for feedback, movie playback, voice over.",
 			"main": "components/springroll/dist/modules/learning-media.min.js",
-			"mainDebug": "components/springroll/dist/modules/learning-media.css",
+			"mainDebug": "components/springroll/dist/modules/learning-media.js",
 			"depends": [
 				"captions",
 				"sound",
@@ -129,12 +135,13 @@
 		},
 		{
 			"id": "hints",
-			"name": "Hinting",
+			"name": "Hints",
 			"description": "Management of hints using either animation or VO playback",
 			"main": "components/springroll/dist/modules/hints.min.js",
 			"mainDebug": "components/springroll/dist/modules/hints.js",
 			"depends": [
 				"sound",
+				"learning-media",
 				["pixi-animation", "easeljs-animation"]
 			]
 		},
