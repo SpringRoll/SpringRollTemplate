@@ -119,7 +119,7 @@
 			},
 			"librariesDebug": [
 				"components/jquery/dist/jquery.js"
-			],
+			]
 		},
 		{
 			"id": "learning-media",
