@@ -23,7 +23,7 @@
 				"components/springroll/dist/core.css"
 			],
 			"bower": {
-				"springroll": "master"
+				"springroll": "*"
 			},
 			"libraries": "components/preloadjs/lib/preloadjs.min.js",
 			"librariesDebug": "components/preloadjs/lib/preloadjs.combined.js"
