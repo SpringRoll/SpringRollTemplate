@@ -1,7 +1,7 @@
 {
 	"name" : "Default",
 	"id" : "io.springroll.default",
-	"version" : "1.4.0",
+	"version" : "1.4.1",
 	"github": "SpringRoll/SpringRollTemplate",
 	"rename" : {
 		"gitignore" : ".gitignore",
@@ -141,7 +141,6 @@
 			"mainDebug": "components/springroll/dist/modules/hints.js",
 			"depends": [
 				"sound",
-				"learning-media",
 				["pixi-animation", "easeljs-animation"]
 			]
 		},
