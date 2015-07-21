@@ -1,7 +1,7 @@
 {
 	"name" : "Default",
 	"id" : "io.springroll.default",
-	"version" : "1.4.3",
+	"version" : "1.4.4",
 	"github": "SpringRoll/SpringRollTemplate",
 	"rename" : {
 		"gitignore" : ".gitignore",
@@ -61,13 +61,6 @@
 			"depends": [
 				["pixi-animation", "easeljs-animation"]
 			]
-		},
-		{
-			"id": "tasks",
-			"name": "Tasks",
-			"description": "Manager for asynchronous tasks, like loading multiple assets",
-			"main": "components/springroll/dist/modules/tasks.min.js",
-			"mainDebug": "components/springroll/dist/modules/tasks.js"
 		},
 		{
 			"id": "sound",
@@ -215,8 +208,7 @@
 			"main": "components/springroll/dist/modules/easeljs-ui.min.js",
 			"mainDebug": "components/springroll/dist/modules/easeljs-ui.js",
 			"depends": [
-				"easeljs-display",
-				"easeljs-utils"
+				"easeljs-display"
 			]
 		},
 		{
@@ -231,14 +223,6 @@
 			]
 		},
 		{
-			"id": "easeljs-utils",
-			"name": "EaselJS Utilities",
-			"description": "Contains bitmap utilities for managing, loading and formatting bitmaps",
-			"main": "components/springroll/dist/modules/easeljs-utils.min.js",
-			"mainDebug": "components/springroll/dist/modules/easeljs-utils.js",
-			"depends": ["easeljs-display"]
-		},
-		{
 			"id": "easeljs-cutscene",
 			"name": "EaselJS Cutscene",
 			"description": "Module for playing a cinematic scene (audio and timeline) with EaselJS",
@@ -246,9 +230,7 @@
 			"mainDebug": "components/springroll/dist/modules/easeljs-cutscene.js",
 			"depends": [
 				"easeljs-display",
-				"easeljs-animation",
-				"easeljs-utils",
-				"tasks"
+				"easeljs-animation"
 			]
 		},
 		{
