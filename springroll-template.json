@@ -23,7 +23,7 @@
 				"components/springroll/dist/core.css"
 			],
 			"bower": {
-				"springroll": "*"
+				"springroll": "~0.4"
 			},
 			"libraries": "components/preloadjs/lib/preloadjs.min.js",
 			"librariesDebug": "components/preloadjs/lib/preloadjs.combined.js",
@@ -53,14 +53,18 @@
 			"default": true
 		},
 		{
+			"id": "animation",
+			"name": "Animation",
+			"description": "Use of the Animator to playback various animation formats",
+			"main": "components/springroll/dist/modules/animation.min.js",
+			"mainDebug": "components/springroll/dist/modules/animation.js"
+		},
+		{
 			"id": "states",
 			"name": "States",
 			"description": "Add states to Application and a transition",
 			"main": "components/springroll/dist/modules/states.min.js",
-			"mainDebug": "components/springroll/dist/modules/states.js",
-			"depends": [
-				["pixi-animation", "easeljs-animation"]
-			]
+			"mainDebug": "components/springroll/dist/modules/states.js"
 		},
 		{
 			"id": "sound",
@@ -138,7 +142,7 @@
 			"depends": [
 				"captions",
 				"sound",
-				["pixi-animation", "easeljs-animation"]
+				"animation"
 			]
 		},
 		{
@@ -149,7 +153,7 @@
 			"mainDebug": "components/springroll/dist/modules/hints.js",
 			"depends": [
 				"sound",
-				["pixi-animation", "easeljs-animation"]
+				"animation"
 			]
 		},
 		{
@@ -199,7 +203,10 @@
 				"components/tweenjs/lib/tweenjs.combined.js",
 				"components/easeljs/lib/movieclip.combined.js"
 			],
-			"depends": ["easeljs-display"]
+			"depends": [
+				"animation",
+				"easeljs-display"
+			]
 		},
 		{
 			"id": "easeljs-ui",
@@ -230,8 +237,19 @@
 			"mainDebug": "components/springroll/dist/modules/easeljs-cutscene.js",
 			"depends": [
 				"easeljs-display",
+				"animation",
 				"easeljs-animation"
 			]
+		},
+		{
+			"id": "easeljs-cursor",
+			"name": "EaselJS Cursor",
+			"description": "Add a custom cursor to the Application",
+			"main": "components/springroll-cursor/dist/modules/easeljs-cursor.min.js",
+			"mainDebug": "components/springroll-cursor/dist/modules/easeljs-cursor.js",
+			"bower": {
+				"springroll-cursor": "*"
+			}
 		},
 		{
 			"id": "pixi-display",
@@ -252,7 +270,10 @@
 			"description": "Manage animation playback with sprites or Spine animations",
 			"main": "components/springroll/dist/modules/pixi-animation.min.js",
 			"mainDebug": "components/springroll/dist/modules/pixi-animation.js",
-			"depends": ["pixi-display"]
+			"depends": [
+				"animation", 
+				"pixi-display"
+			]
 		},
 		{
 			"id": "pixi-ui",
@@ -269,6 +290,16 @@
 			"main": "components/springroll/dist/modules/native-display.min.js",
 			"mainDebug": "components/springroll/dist/modules/native-display.js",
 			"display": "springroll.native.NativeDisplay"
+		},
+		{
+			"id": "keyboard",
+			"name": "Keyboard",
+			"description": "A keyboard input handling plugin",
+			"main": "components/springroll-keyboard/dist/keyboard.min.js",
+			"mainDebug": "components/springroll-keyboard/dist/keyboard.js",
+			"bower": {
+				"springroll-keyboard": "*"
+			}
 		},
 		{
 			"id": "container",
