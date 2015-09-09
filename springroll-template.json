@@ -258,7 +258,7 @@
 			"main": "components/springroll/dist/modules/pixi-display.min.js",
 			"mainDebug": "components/springroll/dist/modules/pixi-display.js",
 			"bower": {
-				"pixi.js":"https://github.com/SpringRoll/pixi.js.git#master"
+				"pixi.js":"https://github.com/SpringRoll/pixi.js.git"
 			},
 			"libraries": "components/pixi.js/bin/pixi.min.js",
 			"librariesDebug": "components/pixi.js/bin/pixi.js",
