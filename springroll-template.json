@@ -1,7 +1,7 @@
 {
 	"name" : "Default",
 	"id" : "io.springroll.default",
-	"version" : "1.4.4",
+	"version" : "1.4.5",
 	"github": "SpringRoll/SpringRollTemplate",
 	"rename" : {
 		"gitignore" : ".gitignore",
@@ -258,10 +258,10 @@
 			"main": "components/springroll/dist/modules/pixi-display.min.js",
 			"mainDebug": "components/springroll/dist/modules/pixi-display.js",
 			"bower": {
-				"pixi.js":"https://github.com/SpringRoll/pixi.js.git"
+				"pixi.js":"https://github.com/SpringRoll/pixi.js.git#master"
 			},
-			"libraries": "components/pixi.js/bin/pixi.js",
-			"librariesDebug": "components/pixi.js/bin/pixi.dev.js",
+			"libraries": "components/pixi.js/bin/pixi.min.js",
+			"librariesDebug": "components/pixi.js/bin/pixi.js",
 			"display": "springroll.pixi.PixiDisplay"
 		},
 		{
