@@ -276,6 +276,17 @@
 			]
 		},
 		{
+			"id": "pixi-spine",
+			"name": "Pixi.js Spine",
+			"description": "Manage spine playback and loading",
+			"main": "components/springroll/dist/modules/pixi-spine.min.js",
+			"mainDebug": "components/springroll/dist/modules/pixi-spine.js",
+			"depends": [
+				"animation", 
+				"pixi-display"
+			]
+		},
+		{
 			"id": "pixi-ui",
 			"name": "Pixi.js Interface",
 			"description": "Drag management and basic buttons for Pixi.js",
