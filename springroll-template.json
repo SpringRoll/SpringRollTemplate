@@ -1,7 +1,7 @@
 {
 	"name" : "Default",
 	"id" : "io.springroll.default",
-	"version" : "1.4.5",
+	"version" : "1.5.0",
 	"github": "SpringRoll/SpringRollTemplate",
 	"rename" : {
 		"gitignore" : ".gitignore",
@@ -118,34 +118,6 @@
 			"mainDebug": "components/springroll/dist/modules/languages.js"
 		},
 		{
-			"id": "learning",
-			"name": "Learning",
-			"description": "Integration for sending events with the Learning dispatcher",
-			"main": "components/springroll/dist/modules/learning.min.js",
-			"mainDebug": [
-				"components/springroll/dist/modules/learning.js",
-				"components/springroll/dist/modules/learning.css"
-			],
-			"bower": {
-				"jquery": "*"
-			},
-			"librariesDebug": [
-				"components/jquery/dist/jquery.js"
-			]
-		},
-		{
-			"id": "learning-media",
-			"name": "Learning Media",
-			"description": "Convenience functions for playing and dispatching events for feedback, movie playback, voice over.",
-			"main": "components/springroll/dist/modules/learning-media.min.js",
-			"mainDebug": "components/springroll/dist/modules/learning-media.js",
-			"depends": [
-				"captions",
-				"sound",
-				"animation"
-			]
-		},
-		{
 			"id": "hints",
 			"name": "Hints",
 			"description": "Management of hints using either animation or VO playback",
@@ -216,17 +188,6 @@
 			"mainDebug": "components/springroll/dist/modules/easeljs-ui.js",
 			"depends": [
 				"easeljs-display"
-			]
-		},
-		{
-			"id": "easeljs-learning",
-			"name": "EaselJS Learning",
-			"description": "EaselJS-specific convenience utilities for event tracking",
-			"main": "components/springroll/dist/modules/easeljs-learning.min.js",
-			"mainDebug": "components/springroll/dist/modules/easeljs-learning.js",
-			"depends": [
-				"easeljs-display",
-				"learning"
 			]
 		},
 		{
