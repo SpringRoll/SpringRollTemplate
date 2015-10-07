@@ -272,25 +272,6 @@
 			"bower": {
 				"springroll-keyboard": "*"
 			}
-		},
-		{
-			"id": "container",
-			"name": "Container",
-			"description": "The container for interacting with SpringRoll projects that are iframed",
-			"main": "components/springroll/dist/modules/container.min.js",
-			"mainDebug": "components/springroll/dist/modules/container.js",
-			"bower": {
-				"bellhop": "*",
-				"jquery": "*"
-			},
-			"libraries":[
-				"components/bellhop/dist/bellhop.min.js",
-				"components/jquery/dist/jquery.min.js"
-			],
-			"librariesDebug": [
-				"components/bellhop/dist/bellhop.js",
-				"components/jquery/dist/jquery.js"
-			]
 		}
 	]
 }
