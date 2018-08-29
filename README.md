@@ -1,3 +1,6 @@
+# Depreciated
+With the release of SpringRoll 2.0 this repository has been deprecated.
+
 # SpringRollTemplate
 
 Default template for the [SpringRoll Studio](https://github.com/SpringRoll/SpringRollStudio) application.
